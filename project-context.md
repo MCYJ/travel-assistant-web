@@ -31,3 +31,10 @@
 - 남은조건: 원어민언어검수,개별affiliate프로그램승인,검증혜택/최종Store심사 등제품출시조건. 사이트자체배포완료. 소개를파트너에게실제제출/메일발송하지않음.
 - printbutton/window.print 및printCSS 구현; 자동화click명령시간초과로실제인쇄미리보기/파일출력검증은미완료. 브라우저상태복구후사이트열림검증. 출력성공으로보고하지않음.
 - 후속기록commit은공개docs/산출물변경없는문서수정이며불필요한빌드중복을피하기위해CI skip.
+
+## pikvia 브랜드 개편 (2026-10-08)
+- 확정브랜드pikvia(소문자), 의미pick via='~를 통해 선택하다'. 12locale별heroheadline/brandTitle/brandMeaning으로명시. pick+via→pikvia브랜드스토리,wordmark/header/meta/structureddata/footer/privacy문의subject전부갱신.
+- 기술repository/sitepath/storageID는기존URL과선택정보보존. actualcompiledEnglishpopupv0.4.3로소개이미지교체;원래KOpopupjpg제거. 개발용메모리APIfixture이며설치/Store승인증거아님.
+- website4tests PASS(12localefullschema/상대links/branding의oldname부재/brandmeaning/identity/RTL/SEO),Chrome320(client305)+390(client375)×24pages=48checks: overflow0/broken0/legacytext0. KO→AR실제select및RTL시각확인,viewport복구.
+- 기존extensionprivacyWorker에pikvia반영,API0.1.5/version3a64c7be-1e48-4fe7-a791-522d9bfae9e8배포/live10APIchecksPASS. Store의도HOLD유지.
+- 같은cwd별도앱스레드의새p마크작업파일은보존. 본사이트작업은기존아이콘과새실제popup으로브랜딩개편하며앱아이콘최종적용/배포와구분.

@@ -35,9 +35,9 @@ test('HTML carries static localization, partner identity, privacy and correct RT
   assert.ok(html.includes(`<html lang="${lang}" dir="${lang==='ar'?'rtl':'ltr'}">`));
   assert.ok(html.includes('june1012june@gmail.com'));assert.ok(html.includes('662-28-01965'));
   assert.equal((html.match(/rel="alternate" hreflang=/g)||[]).length,13);
-  assert.ok(html.includes('id="main"'));assert.ok(html.includes('rel="canonical"'));
+  assert.ok(html.includes('id="main"'));assert.ok(html.includes('pikvia'));assert.ok(!html.includes('Travel Assistant'));assert.ok(html.includes('rel="canonical"'));
   assert.ok(!/<iframe|<form|googletag|google-analytics|chromewebstore\.google\.com/.test(html));
-  if(page==='index.html')assert.ok(html.includes(locales[lang].readyBody.replaceAll('&','&amp;')));
+  if(page==='index.html'){assert.ok(html.includes(locales[lang].readyBody.replaceAll('&','&amp;')));assert.ok(html.includes('class="brand-story"'));assert.ok(html.includes(locales[lang].brandMeaning.replaceAll('&','&amp;')));}
  }
 });
 test('sitemap lists all canonical localized routes',async()=>{

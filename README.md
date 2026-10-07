@@ -1,4 +1,4 @@
-# Travel Assistant — partner introduction
+# pikvia — partner introduction
 
 Public website for the RushLabs browser extension. English-first partner overview, 12 complete website locales, referral disclosures, development status, privacy summaries, review-build contact and print layout.
 

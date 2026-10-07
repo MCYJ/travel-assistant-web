@@ -49,3 +49,5 @@
 - 확장서비스의자체p+경로화살표마크를소개사이트icon/favicon/OG에동일적용,header서명pick via로통일. RushLabs법적운영자표시는footer/contact에유지.
 - 실제compiled ENpopup v0.4.4 capture로제품이미지갱신,12locale본문/SEO/service-profile/deploy-info의version동기화. 신규icon-pikvia.png/popup-pikvia.jpg경로로이전브라우저이미지cache혼동예방. 기존공개route/사업자/제출HOLD/파트너안내유지.
 - Node4tests/build PASS,Chrome390ArabicRTL(client375=scroll375)/새PNG·JPG로드및새brand표시확인. 320German작은화면확인중. 원래원어민검수/실제마켓제출보류조건유지.
+- 공통마크web구현7ebed7e2ff3844188306af9fa861070e9dfb58c8, CI37654551692/Pages37654550288 success. 새PNG/JPG포함공개35파일status200/SHA256로컬동일,404/privacy200검증PASS. 초기배포중audit미일치는배포완료후재검증하여모두해소됨.
+- Chrome공개EN0.4.4/동일p마크/pick via서명/이미지broken0 확인, .qa/pikvia-common-brand-live.jpg저장. local320German client305=scroll305/새assetsbroken0 추가확인. 임시viewport복구. 사이트브랜드변경배포완료이며파트너프로그램에메일/신청제출하지않음.

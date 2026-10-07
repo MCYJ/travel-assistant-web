@@ -38,3 +38,9 @@
 - website4tests PASS(12localefullschema/상대links/branding의oldname부재/brandmeaning/identity/RTL/SEO),Chrome320(client305)+390(client375)×24pages=48checks: overflow0/broken0/legacytext0. KO→AR실제select및RTL시각확인,viewport복구.
 - 기존extensionprivacyWorker에pikvia반영,API0.1.5/version3a64c7be-1e48-4fe7-a791-522d9bfae9e8배포/live10APIchecksPASS. Store의도HOLD유지.
 - 같은cwd별도앱스레드의새p마크작업파일은보존. 본사이트작업은기존아이콘과새실제popup으로브랜딩개편하며앱아이콘최종적용/배포와구분.
+
+## pikvia 개편 최종 검증 (2026-10-08)
+- 개편구현7aefccc9e6a796dd2fb47d9ceb88671bf7f30b8a. WebsiteCI37651839970 및Pages37651839506 success. 공개audit33파일SHA256/200일치,24localeHTML/404/extensionprivacyPASS. PagesAPIbuilt/HTTPS.
+- 공개Chrome title='pikvia — The extension · For partners', H1='Your next choice, via pikvia.', pick+via스토리실제render,oldname0/brokenimages0. .qa/pikvia-live.png 및pikvia-mobile.json 저장. English/Korean기존공개URL유지.
+- 공통표시명/Workerprivacy수정sourcecommit6de5205489f1a50d2291f98491a89ae8e0b50fd0 mainpush,sourceNode24CI37651943366 success(check138/8platforms/Store의도HOLD/Workerdryrun/securityaudit).
+- 새아이콘적용은별도앱작업의범위이며그파일은수정·stage하지않음. 이번웹브랜드개편배포완료. native재컴파일/실설치/Store심사는완료로주장하지않음.

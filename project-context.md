@@ -23,3 +23,11 @@
 - 최초GitHub공개repository 생성/push 완료: https://github.com/MCYJ/travel-assistant-web . 최초commit d56b661. Pages main/docs+HTTPS활성화,APIstatusbuilt.
 - 최초Pages배포 https://github.com/MCYJ/travel-assistant-web/actions/runs/37648238870 및Node24CI https://github.com/MCYJ/travel-assistant-web/actions/runs/37648198965 success. 공개EN HTTP200 및기존extensionprivacy HTTP200.
 - 최종소형화면수정은 후속커밋에 포함. audit:production은모든배포파일SHA256동일/24localizedHTML/assets/커스텀404/전체extensionprivacy를검사하여.qa에localreceipt저장.
+
+## 최종 공개 검증 (2026-10-08)
+- 최종구현8b095200be27678c6be5d609e510a5f35ae11941. Node24 Website checks https://github.com/MCYJ/travel-assistant-web/actions/runs/37648624998 success, Pages https://github.com/MCYJ/travel-assistant-web/actions/runs/37648624139 success.
+- npm run audit:production PASS: 공개33파일 status200+SHA256 local동일,24localizedpages 포함. 없는route status404+자체404본문, 전체extensionprivacy GET200. PagesAPI built/public=true/https_enforced=true/main/docs 확인.
+- 공개 https://mcyj.github.io/travel-assistant-web/en/ Chrome 실제시각확인 및tabdeliverable보존. .qa/site-live.png, .qa/mobile-checks.json, .qa/production-audit.json 로컬증거저장(Gitignore). 비공개extensionrepo visibilityPRIVATE 재확인.
+- 남은조건: 원어민언어검수,개별affiliate프로그램승인,검증혜택/최종Store심사 등제품출시조건. 사이트자체배포완료. 소개를파트너에게실제제출/메일발송하지않음.
+- printbutton/window.print 및printCSS 구현; 자동화click명령시간초과로실제인쇄미리보기/파일출력검증은미완료. 브라우저상태복구후사이트열림검증. 출력성공으로보고하지않음.
+- 후속기록commit은공개docs/산출물변경없는문서수정이며불필요한빌드중복을피하기위해CI skip.

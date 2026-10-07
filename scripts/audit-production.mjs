@@ -1,0 +1,20 @@
+import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
+const root = fileURLToPath(new URL('../docs/',import.meta.url));
+const base = 'https://mcyj.github.io/travel-assistant-web/';
+const hash = text => createHash('sha256').update(text).digest('hex');
+async function walk(dir){return (await Promise.all((await readdir(dir,{withFileTypes:true})).map(f=>f.isDirectory()?walk(resolve(dir,f.name)):resolve(dir,f.name)))).flat();}
+const files=(await walk(root)).filter(f=>!f.endsWith('/.nojekyll'));
+const results=[];let cursor=0;
+await Promise.all(Array.from({length:4},async()=>{while(cursor<files.length){const file=files[cursor++];const path=file.slice(root.length);try{const response=await fetch(base+path,{signal:AbortSignal.timeout(20000)});const bytes=Buffer.from(await response.arrayBuffer());const local=await readFile(file);results.push({path,status:response.status,matches:hash(bytes)===hash(local),bytes:bytes.length});}catch(e){results.push({path,error:String(e)});}}}));
+const missing=await fetch(base+'qa-missing-page',{signal:AbortSignal.timeout(20000)});
+const missingBody=await missing.text();
+const policy=await fetch('https://travel-assistant-links.june1012june.workers.dev/privacy',{signal:AbortSignal.timeout(20000)});
+const receipt={base,checkedAt:new Date().toISOString(),files:results.sort((a,b)=>a.path.localeCompare(b.path)),custom404:{status:missing.status,authoredPage:missingBody.includes('This page could not be found.')},extensionPolicy:policy.status};
+receipt.pass=results.every(r=>r.status===200&&r.matches)&&receipt.custom404.status===404&&receipt.custom404.authoredPage&&policy.status===200;
+await mkdir(fileURLToPath(new URL('../.qa/',import.meta.url)),{recursive:true});
+await writeFile(fileURLToPath(new URL('../.qa/production-audit.json',import.meta.url)),JSON.stringify(receipt,null,2)+'\n');
+console.log(JSON.stringify({pass:receipt.pass,verifiedFiles:results.length,failures:results.filter(r=>r.status!==200||!r.matches),custom404:receipt.custom404,extensionPolicy:policy.status},null,2));
+if(!receipt.pass)process.exitCode=1;

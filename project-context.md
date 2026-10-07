@@ -17,3 +17,9 @@
 - 사이트 privacy summary는12개 언어, 전체 확장 policy는 기존 공식 공개KO/EN문서로 연결. GitHub호스팅 메타데이터/선택언어 저장/mailto 외부전송 안내 포함.
 - Node4tests PASS: 전체locale스키마·번역내용,24locale routes 포함 모든상대links/assets,실제readyBody/사업자identity/RTL/SEO, sitemap.
 - Chrome 데스크톱 시각검증: 정상render, 실제제품capture, 추천·HOLD·contact내용 확인.
+- Chrome 390viewport/client375에서12개locale×overview/privacy=24pages 전부scroll=client,깨진image0. 실제select EN→ArabicRTL 및privacy KO→JA경로유지 검증.
+- 추가320viewport/client305 독일어category overflow발견: minmax0/grid spanwrap 및360이하1열로수정. 이후12locale×2page 전체overflow0. 768tabletKO/client753정상. viewport override복구.
+- privacy heading h1→h2계층수정,locale별windowtitle/hero제품분류번역갱신. 4tests재검증PASS.
+- 최초GitHub공개repository 생성/push 완료: https://github.com/MCYJ/travel-assistant-web . 최초commit d56b661. Pages main/docs+HTTPS활성화,APIstatusbuilt.
+- 최초Pages배포 https://github.com/MCYJ/travel-assistant-web/actions/runs/37648238870 및Node24CI https://github.com/MCYJ/travel-assistant-web/actions/runs/37648198965 success. 공개EN HTTP200 및기존extensionprivacy HTTP200.
+- 최종소형화면수정은 후속커밋에 포함. audit:production은모든배포파일SHA256동일/24localizedHTML/assets/커스텀404/전체extensionprivacy를검사하여.qa에localreceipt저장.

@@ -1,0 +1,22 @@
+{
+  "serviceId": "travel-assistant-web",
+  "productVersion": "0.4.2",
+  "contentDate": "2026-10-08",
+  "locales": [
+    "en",
+    "ko",
+    "ja",
+    "zh-CN",
+    "zh-TW",
+    "de",
+    "fr",
+    "es",
+    "pt-BR",
+    "it",
+    "ar",
+    "id"
+  ],
+  "translations": "complete website copy; human linguistic review pending",
+  "pages": 24,
+  "source": "Public introduction only; extension source is private"
+}

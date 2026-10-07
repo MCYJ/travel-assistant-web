@@ -44,3 +44,8 @@
 - 공개Chrome title='pikvia — The extension · For partners', H1='Your next choice, via pikvia.', pick+via스토리실제render,oldname0/brokenimages0. .qa/pikvia-live.png 및pikvia-mobile.json 저장. English/Korean기존공개URL유지.
 - 공통표시명/Workerprivacy수정sourcecommit6de5205489f1a50d2291f98491a89ae8e0b50fd0 mainpush,sourceNode24CI37651943366 success(check138/8platforms/Store의도HOLD/Workerdryrun/securityaudit).
 - 새아이콘적용은별도앱작업의범위이며그파일은수정·stage하지않음. 이번웹브랜드개편배포완료. native재컴파일/실설치/Store심사는완료로주장하지않음.
+
+## 공통 pikvia 마크 적용 — 2026-10-08
+- 확장서비스의자체p+경로화살표마크를소개사이트icon/favicon/OG에동일적용,header서명pick via로통일. RushLabs법적운영자표시는footer/contact에유지.
+- 실제compiled ENpopup v0.4.4 capture로제품이미지갱신,12locale본문/SEO/service-profile/deploy-info의version동기화. 신규icon-pikvia.png/popup-pikvia.jpg경로로이전브라우저이미지cache혼동예방. 기존공개route/사업자/제출HOLD/파트너안내유지.
+- Node4tests/build PASS,Chrome390ArabicRTL(client375=scroll375)/새PNG·JPG로드및새brand표시확인. 320German작은화면확인중. 원래원어민검수/실제마켓제출보류조건유지.

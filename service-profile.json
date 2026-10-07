@@ -9,11 +9,11 @@
   "url": "https://mcyj.github.io/travel-assistant-web/",
   "contact": "june1012june@gmail.com",
   "chromeExtensionId": "knpgllageckpmhjleaoocggjaagjpjml",
-  "productVersion": "0.4.3",
+  "productVersion": "0.4.4",
   "storeStatus": "development-only; submission-held",
   "oauth": null,
   "iap": null,
   "ads": null,
   "server": null,
-  "brandMeaning": "pick via — choose through a helpful path"
+  "brandMeaning": "pick via \u2014 choose through a helpful path"
 }

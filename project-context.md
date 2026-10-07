@@ -51,3 +51,4 @@
 - Node4tests/build PASS,Chrome390ArabicRTL(client375=scroll375)/새PNG·JPG로드및새brand표시확인. 320German작은화면확인중. 원래원어민검수/실제마켓제출보류조건유지.
 - 공통마크web구현7ebed7e2ff3844188306af9fa861070e9dfb58c8, CI37654551692/Pages37654550288 success. 새PNG/JPG포함공개35파일status200/SHA256로컬동일,404/privacy200검증PASS. 초기배포중audit미일치는배포완료후재검증하여모두해소됨.
 - Chrome공개EN0.4.4/동일p마크/pick via서명/이미지broken0 확인, .qa/pikvia-common-brand-live.jpg저장. local320German client305=scroll305/새assetsbroken0 추가확인. 임시viewport복구. 사이트브랜드변경배포완료이며파트너프로그램에메일/신청제출하지않음.
+- 최종QA기록commit48f9a05추가push는GitHubremote Internal Server Error로3회실패. 실제구현7ebed7e의CI/Pages배포및35파일productionaudit는완료/정상. 문서기록만로컬commits에보존. GitHub복구후이repo에서git push origin main으로재개가능,force/URL변경없음.

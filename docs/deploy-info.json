@@ -1,7 +1,7 @@
 {
   "serviceId": "travel-assistant-web",
-  "productVersion": "0.4.4",
-  "contentDate": "2026-10-08",
+  "productVersion": "0.5.0",
+  "contentDate": "2026-10-19",
   "locales": [
     "en",
     "ko",
@@ -17,6 +17,6 @@
     "id"
   ],
   "translations": "complete website copy; human linguistic review pending",
-  "pages": 24,
+  "pages": 28,
   "source": "Public introduction only; extension source is private"
 }

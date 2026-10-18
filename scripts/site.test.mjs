@@ -41,6 +41,6 @@ test('HTML carries static localization, partner identity, privacy and correct RT
  }
 });
 test('sitemap lists all canonical localized routes',async()=>{
- const xml=await readFile(resolve(root,'sitemap.xml'),'utf8');assert.equal((xml.match(/<loc>/g)||[]).length,24);
+ const xml=await readFile(resolve(root,'sitemap.xml'),'utf8');assert.equal((xml.match(/<loc>/g)||[]).length,28);
  assert.ok(await stat(resolve(root,'.nojekyll')));
 });

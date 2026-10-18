@@ -1,0 +1,626 @@
+{
+  "product": "pikvia",
+  "version": "0.5.0",
+  "generatedAt": "2026-10-18T16:28:52.159Z",
+  "locales": [
+    "en",
+    "ko"
+  ],
+  "provenance": "Screenshots of the actual compiled 0.5.0 UI served by scripts/demo-server.mjs with in-memory browser APIs. No simulated promotions. These are not native device or installed Safari screenshots.",
+  "publication": "Assets prepared; no store listing submitted or approved.",
+  "sources": [
+    {
+      "path": "source-captures/popup-en.png",
+      "sha256": "5a81203d7b6c1eff61109955f62153b77b0758de0d0e83a1bc126776646afb67",
+      "source": "/popup-qa/?target=chrome&lang=en&site=hotels"
+    },
+    {
+      "path": "source-captures/services-en.png",
+      "sha256": "b4769794e0a2aa4d79bb8203f9363c8ab64009482efd5b7be55c0532691c1454",
+      "source": "/onboarding-qa/?target=chrome&lang=en#services"
+    },
+    {
+      "path": "source-captures/compare-en.png",
+      "sha256": "c6590e72a705430b3e626f107774e62f4407bf517c2fcfe59fc5fd6efb3f091f",
+      "source": "/onboarding-qa/?target=chrome&lang=en#compare"
+    },
+    {
+      "path": "source-captures/privacy-en.png",
+      "sha256": "307abca9dfee944578958ee8d1411dbf48901c2ba8191bef7b4d980bfd35604a",
+      "source": "/onboarding-qa/?target=chrome&lang=en#privacy"
+    },
+    {
+      "path": "source-captures/popup-ko.png",
+      "sha256": "3487bfc2a3a643171a291721eb9513bf4087c393d633f90f92c53cb07ce79d99",
+      "source": "/popup-qa/?target=chrome&lang=ko&site=hotels"
+    },
+    {
+      "path": "source-captures/services-ko.png",
+      "sha256": "0659f03b65261bf5b4597f54474b8fc800b560776abbf75692cc0eb5b748ba8c",
+      "source": "/onboarding-qa/?target=chrome&lang=ko#services"
+    },
+    {
+      "path": "source-captures/compare-ko.png",
+      "sha256": "30471419a13e800741bd4c5673cdf11fa48f963af817b619e51c0cad6d5df2de",
+      "source": "/onboarding-qa/?target=chrome&lang=ko#compare"
+    },
+    {
+      "path": "source-captures/privacy-ko.png",
+      "sha256": "5bef4a1670458297b563bd0c36a7d9d658688ad35a3b313b76e2194265ee4924",
+      "source": "/onboarding-qa/?target=chrome&lang=ko#privacy"
+    }
+  ],
+  "files": [
+    {
+      "path": "icons/icon-16.png",
+      "width": 16,
+      "height": 16,
+      "alpha": false,
+      "bytes": 305,
+      "sha256": "79ddb856912e582999346c2418c2cf9c91d9da87eaf059ccb2fdce648052ade2",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-32.png",
+      "width": 32,
+      "height": 32,
+      "alpha": false,
+      "bytes": 453,
+      "sha256": "9cd57a334b149f4e75190778aaf705b20c6da98c40a414a62744eb5d0a4c081c",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-48.png",
+      "width": 48,
+      "height": 48,
+      "alpha": false,
+      "bytes": 594,
+      "sha256": "ae48919fbe0ca935dca78d58026943eaaafc6b86982b14564da34707251bf107",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-96.png",
+      "width": 96,
+      "height": 96,
+      "alpha": false,
+      "bytes": 1090,
+      "sha256": "6d1455a65b89cd4a4c6171e5843ef14c8326f1f419ebcfdff242ab043a0012b8",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-128.png",
+      "width": 128,
+      "height": 128,
+      "alpha": false,
+      "bytes": 1470,
+      "sha256": "d84824744ed8b3a97a40750c49a4e67ee82fc59e752a9eaf8e45eb53f4e45a5c",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-256.png",
+      "width": 256,
+      "height": 256,
+      "alpha": false,
+      "bytes": 3545,
+      "sha256": "eaa44cbeccbaf647ab5feb35aaff5b36bc7f5c6a195c383fe4d401e66c3a5ae6",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-300.png",
+      "width": 300,
+      "height": 300,
+      "alpha": false,
+      "bytes": 4361,
+      "sha256": "9801565c40b9747bd03829152de79d696d1d1b81ac714954e4a8b1c1f5c61b87",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "width": 512,
+      "height": 512,
+      "alpha": false,
+      "bytes": 9566,
+      "sha256": "6b206b5ba268ada3a0045d87df4f6ed1b9e497680053208ee1cce9042f14ece6",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/icon-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "alpha": false,
+      "bytes": 27569,
+      "sha256": "6694b44f11c945cb51e7d05a0e53ef73b07d19b8c5ba37c7c7ef671d48a22a4c",
+      "purpose": "Canonical pikvia mark; opaque square"
+    },
+    {
+      "path": "icons/chrome-128.png",
+      "width": 128,
+      "height": 128,
+      "alpha": true,
+      "bytes": 2371,
+      "sha256": "764fe5583d61fa903589d8d11841a6b9f84b186bc87de4a0f46dc3858f40f95f",
+      "purpose": "Chrome listing icon: 96px artwork centered in 128px transparent canvas"
+    },
+    {
+      "path": "chrome/en/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 117176,
+      "sha256": "edc21360abfece3c649c606ed1083005f2abcdcb8804587dfb6739cd3fed1d35",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/en/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 117176,
+      "sha256": "edc21360abfece3c649c606ed1083005f2abcdcb8804587dfb6739cd3fed1d35",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/en/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 117176,
+      "sha256": "edc21360abfece3c649c606ed1083005f2abcdcb8804587dfb6739cd3fed1d35",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/en/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 117176,
+      "sha256": "edc21360abfece3c649c606ed1083005f2abcdcb8804587dfb6739cd3fed1d35",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/en/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 117176,
+      "sha256": "edc21360abfece3c649c606ed1083005f2abcdcb8804587dfb6739cd3fed1d35",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/en/01-popup.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 57319,
+      "sha256": "3a17c578f052fdca14490c2132cc9e3b1e440b1edf1ec553d3e6f5e1876938a5",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/en/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 190156,
+      "sha256": "27d5e0b160998d2efa3533d1bbe98c2f6bb3948fe78a19342cb984f8cdd5aded",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/en/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 190156,
+      "sha256": "27d5e0b160998d2efa3533d1bbe98c2f6bb3948fe78a19342cb984f8cdd5aded",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/en/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 190156,
+      "sha256": "27d5e0b160998d2efa3533d1bbe98c2f6bb3948fe78a19342cb984f8cdd5aded",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/en/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 190156,
+      "sha256": "27d5e0b160998d2efa3533d1bbe98c2f6bb3948fe78a19342cb984f8cdd5aded",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/en/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 190156,
+      "sha256": "27d5e0b160998d2efa3533d1bbe98c2f6bb3948fe78a19342cb984f8cdd5aded",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/en/02-services.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 72081,
+      "sha256": "026be138a853c454c28c7930f603a261d9f8c3322687515942f54c8c104bed74",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/en/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 124795,
+      "sha256": "1c029f4b578bbe24fd378e7ff0ac1aa3480d44ad76c31f7230fd72f45fbe076d",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/en/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 124795,
+      "sha256": "1c029f4b578bbe24fd378e7ff0ac1aa3480d44ad76c31f7230fd72f45fbe076d",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/en/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 124795,
+      "sha256": "1c029f4b578bbe24fd378e7ff0ac1aa3480d44ad76c31f7230fd72f45fbe076d",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/en/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 124795,
+      "sha256": "1c029f4b578bbe24fd378e7ff0ac1aa3480d44ad76c31f7230fd72f45fbe076d",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/en/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 124795,
+      "sha256": "1c029f4b578bbe24fd378e7ff0ac1aa3480d44ad76c31f7230fd72f45fbe076d",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/en/03-compare.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 55471,
+      "sha256": "13053d8b6929aa916ed237e1e45eee799db59fd11279598433097e1f5c56e63c",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/en/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 258562,
+      "sha256": "1f5a222025f28100a5130809cdd84620eb7cf0b2b7c311dbe5b6559fe324651e",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/en/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 258562,
+      "sha256": "1f5a222025f28100a5130809cdd84620eb7cf0b2b7c311dbe5b6559fe324651e",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/en/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 258562,
+      "sha256": "1f5a222025f28100a5130809cdd84620eb7cf0b2b7c311dbe5b6559fe324651e",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/en/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 258562,
+      "sha256": "1f5a222025f28100a5130809cdd84620eb7cf0b2b7c311dbe5b6559fe324651e",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/en/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 258562,
+      "sha256": "1f5a222025f28100a5130809cdd84620eb7cf0b2b7c311dbe5b6559fe324651e",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/en/04-privacy.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 85783,
+      "sha256": "280bba796b1612dff1ea7b21ee5d40b28d9306ade1d4132989afe88f262d3050",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/ko/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 109845,
+      "sha256": "0bc9eff24ba6f139c140e4ebd156b7600cc824f3bf49e2bc5686abb3017bc916",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/ko/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 109845,
+      "sha256": "0bc9eff24ba6f139c140e4ebd156b7600cc824f3bf49e2bc5686abb3017bc916",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/ko/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 109845,
+      "sha256": "0bc9eff24ba6f139c140e4ebd156b7600cc824f3bf49e2bc5686abb3017bc916",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/ko/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 109845,
+      "sha256": "0bc9eff24ba6f139c140e4ebd156b7600cc824f3bf49e2bc5686abb3017bc916",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/ko/01-popup.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 109845,
+      "sha256": "0bc9eff24ba6f139c140e4ebd156b7600cc824f3bf49e2bc5686abb3017bc916",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/ko/01-popup.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 52402,
+      "sha256": "ad00ede6a383e5d53b18adff4b8784961a15b60aa96202464b271cb1a6b5cb7b",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/ko/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 180931,
+      "sha256": "6443171716509d788c667351fa53d0a2dccb32b80379ead0ba277ba0db7b0442",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/ko/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 180931,
+      "sha256": "6443171716509d788c667351fa53d0a2dccb32b80379ead0ba277ba0db7b0442",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/ko/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 180931,
+      "sha256": "6443171716509d788c667351fa53d0a2dccb32b80379ead0ba277ba0db7b0442",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/ko/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 180931,
+      "sha256": "6443171716509d788c667351fa53d0a2dccb32b80379ead0ba277ba0db7b0442",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/ko/02-services.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 180931,
+      "sha256": "6443171716509d788c667351fa53d0a2dccb32b80379ead0ba277ba0db7b0442",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/ko/02-services.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 64676,
+      "sha256": "84f634f3351924488a1f1d0754876cc457dfcbfa43b05b1cff12b7f02aad9f99",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/ko/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 116510,
+      "sha256": "5843b68b81d4b4ba4a174c1ed58fa48e0e653d9c1148b8b3d1f685ca967b2a9c",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/ko/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 116510,
+      "sha256": "5843b68b81d4b4ba4a174c1ed58fa48e0e653d9c1148b8b3d1f685ca967b2a9c",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/ko/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 116510,
+      "sha256": "5843b68b81d4b4ba4a174c1ed58fa48e0e653d9c1148b8b3d1f685ca967b2a9c",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/ko/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 116510,
+      "sha256": "5843b68b81d4b4ba4a174c1ed58fa48e0e653d9c1148b8b3d1f685ca967b2a9c",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/ko/03-compare.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 116510,
+      "sha256": "5843b68b81d4b4ba4a174c1ed58fa48e0e653d9c1148b8b3d1f685ca967b2a9c",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/ko/03-compare.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 50325,
+      "sha256": "fc99b8066ed6265df661fd7599f9fc926f2265a813db403fba87cf246250ce61",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/ko/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 281382,
+      "sha256": "317831447e5565dbedd9343a15f50a3f58599ae69a205bb2923b67cb8312249f",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "edge/ko/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 281382,
+      "sha256": "317831447e5565dbedd9343a15f50a3f58599ae69a205bb2923b67cb8312249f",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "whale/ko/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 281382,
+      "sha256": "317831447e5565dbedd9343a15f50a3f58599ae69a205bb2923b67cb8312249f",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "firefox/ko/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 281382,
+      "sha256": "317831447e5565dbedd9343a15f50a3f58599ae69a205bb2923b67cb8312249f",
+      "purpose": "1280x800 store screenshot composition"
+    },
+    {
+      "path": "safari-macos/ko/04-privacy.png",
+      "width": 1280,
+      "height": 800,
+      "alpha": false,
+      "bytes": 281382,
+      "sha256": "317831447e5565dbedd9343a15f50a3f58599ae69a205bb2923b67cb8312249f",
+      "purpose": "Desktop composition draft; replace with native Safari host capture before submission"
+    },
+    {
+      "path": "opera/ko/04-privacy.png",
+      "width": 612,
+      "height": 408,
+      "alpha": false,
+      "bytes": 91141,
+      "sha256": "290b8ae7226f6e442eb487aa8e3a4334b3195161fef9b5b514c1518997c46b19",
+      "purpose": "Opera 612x408 recommended canvas; content uniformly scaled"
+    },
+    {
+      "path": "chrome/small-tile.png",
+      "width": 440,
+      "height": 280,
+      "alpha": false,
+      "bytes": 5614,
+      "sha256": "32407b1098a2ec53a41b4eedb905fbdadeeab59a886f148f77c07c36375b8756",
+      "purpose": "Brand promotional tile"
+    },
+    {
+      "path": "edge/small-tile.png",
+      "width": 440,
+      "height": 280,
+      "alpha": false,
+      "bytes": 5614,
+      "sha256": "32407b1098a2ec53a41b4eedb905fbdadeeab59a886f148f77c07c36375b8756",
+      "purpose": "Brand promotional tile"
+    },
+    {
+      "path": "chrome/marquee.png",
+      "width": 1400,
+      "height": 560,
+      "alpha": false,
+      "bytes": 19135,
+      "sha256": "98074e4bbd97a32ff17707f802503b7504e2287707f4d29751ffdaa36b864a74",
+      "purpose": "Brand promotional tile"
+    },
+    {
+      "path": "edge/marquee.png",
+      "width": 1400,
+      "height": 560,
+      "alpha": false,
+      "bytes": 19135,
+      "sha256": "98074e4bbd97a32ff17707f802503b7504e2287707f4d29751ffdaa36b864a74",
+      "purpose": "Brand promotional tile"
+    }
+  ],
+  "requirements": {
+    "chrome": "https://developer.chrome.com/docs/webstore/images",
+    "edge": "https://learn.microsoft.com/en-us/microsoft-edge/extensions/publish/publish-extension",
+    "opera": "https://help.opera.com/en/extensions/publishing-guidelines/",
+    "whale": "https://developers.whale.naver.com/distribution/",
+    "firefox": "https://www.extensionworkshop.com/documentation/develop/create-an-appealing-listing/",
+    "safari": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/"
+  },
+  "nativeCaptureRequired": [
+    "safari-macos",
+    "safari-ios",
+    "safari-ipados"
+  ]
+}

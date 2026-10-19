@@ -4,6 +4,7 @@ import { readFile, readdir, stat } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { locales } from '../locales.mjs';
+import galleryLocales from '../gallery-locales.json' with {type:'json'};
 const root=fileURLToPath(new URL('../docs/',import.meta.url));
 const leaves=value=>typeof value==='string'?[value]:Object.values(value).flatMap(leaves);
 test('all 12 locales contain complete overview, referral and privacy copy',()=>{
@@ -41,6 +42,10 @@ test('HTML carries static localization, partner identity, privacy and correct RT
  }
 });
 test('sitemap lists all canonical localized routes',async()=>{
- const xml=await readFile(resolve(root,'sitemap.xml'),'utf8');assert.equal((xml.match(/<loc>/g)||[]).length,28);
+ const xml=await readFile(resolve(root,'sitemap.xml'),'utf8');assert.equal((xml.match(/<loc>/g)||[]).length,Object.keys(locales).length*2+Object.keys(galleryLocales).length*2);
  assert.ok(await stat(resolve(root,'.nojekyll')));
+});
+
+test('localized gallery uses an accessible carousel and browser packs without file captions',async()=>{
+ for(const lang of Object.keys(galleryLocales)){const file=resolve(root,'store-assets',lang==='en'?'index.html':lang+'.html');const html=await readFile(file,'utf8');assert.ok(html.includes(`<html lang="${lang}"`));assert.equal((html.match(/class="slide"/g)||[]).length,4);assert.equal((html.match(/class="pack"/g)||[]).length,7);assert.ok(html.includes('data-previous'));assert.ok(html.includes('data-next'));assert.ok(!html.includes('<figcaption'));assert.ok(!/href="[^\"]*\/icons\//.test(html));assert.ok(html.includes('aria-current="page"'));assert.equal((html.match(/data-url=/g)||[]).length,Object.keys(galleryLocales).length);}
 });

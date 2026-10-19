@@ -1,0 +1,63 @@
+{
+  "version": "0.5.0",
+  "downloads": [
+    {
+      "browser": "chrome",
+      "file": "pikvia-0.5.0-chrome.zip",
+      "version": "0.5.0",
+      "format": "unpacked-extension-zip",
+      "signedStorePackage": false,
+      "bytes": 2090382,
+      "sha256": "2e4808a20c32ca06ffa4679471077dc567a5c44e4b2e52e0f87b8947a6466ac6"
+    },
+    {
+      "browser": "edge",
+      "file": "pikvia-0.5.0-edge.zip",
+      "version": "0.5.0",
+      "format": "unpacked-extension-zip",
+      "signedStorePackage": false,
+      "bytes": 2089989,
+      "sha256": "49520abb21dec61d7ccc677f465d20d0d022b2ae9229b2ae82a8996fcffccad3"
+    },
+    {
+      "browser": "brave",
+      "file": "pikvia-0.5.0-brave.zip",
+      "version": "0.5.0",
+      "format": "unpacked-extension-zip",
+      "signedStorePackage": false,
+      "bytes": 2089995,
+      "sha256": "5913babecd0fecfcb616491717b2c1e7451ff5c14ec34f7e75832e410933ac29"
+    },
+    {
+      "browser": "opera",
+      "file": "pikvia-0.5.0-opera.zip",
+      "version": "0.5.0",
+      "format": "unpacked-extension-zip",
+      "signedStorePackage": false,
+      "bytes": 2089993,
+      "sha256": "4da36a434813db84a440cb8b5dea1ca2ba751cbec9e8b3db104b5bf6aed26275"
+    },
+    {
+      "browser": "firefox",
+      "file": "pikvia-0.5.0-firefox.zip",
+      "version": "0.5.0",
+      "format": "unpacked-extension-zip",
+      "signedStorePackage": false,
+      "bytes": 2090115,
+      "sha256": "8e65e4a9a774e60754890c3be165bbc143a9cf1151c2a978b4fb1e22778261b5"
+    },
+    {
+      "browser": "whale",
+      "file": "pikvia-0.5.0-whale.zip",
+      "version": "0.5.0",
+      "format": "unpacked-extension-zip",
+      "signedStorePackage": false,
+      "bytes": 2089998,
+      "sha256": "103b826a416903ee0c5a04ffc0b0bcd179725b381be71a2a56fecdc084606376"
+    }
+  ],
+  "safari": {
+    "download": null,
+    "reason": "A signed native application is required"
+  }
+}

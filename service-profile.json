@@ -8,14 +8,15 @@
   "repository": "MCYJ/travel-assistant-web",
   "url": "https://mcyj.github.io/travel-assistant-web/",
   "contact": "june1012june@gmail.com",
-  "chromeExtensionId": "knpgllageckpmhjleaoocggjaagjpjml",
   "productVersion": "0.5.0",
-  "storeStatus": "development-only; submission-held",
+  "storeStatus": "unlisted",
   "oauth": null,
   "iap": null,
   "ads": null,
   "server": null,
-  "brandMeaning": "pick via — choose through a helpful path",
+  "brandMeaning": "pick + via",
   "publicSupportUrl": "https://mcyj.github.io/travel-assistant-web/en/support.html",
-  "storeAssetsUrl": "https://mcyj.github.io/travel-assistant-web/store-assets/"
+  "storeAssetsUrl": "https://mcyj.github.io/travel-assistant-web/en/#screenshots",
+  "chromeStoreListing": null,
+  "downloadsUrl": "https://mcyj.github.io/travel-assistant-web/en/#download"
 }

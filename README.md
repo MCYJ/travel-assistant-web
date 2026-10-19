@@ -1,15 +1,15 @@
-# pikvia — partner introduction
+# pikvia
 
-Public website for the RushLabs browser extension. English-first partner overview, 12 complete website locales, referral disclosures, development status, privacy summaries, review-build contact and print layout.
+Public introduction and browser downloads for pikvia by RushLabs.
 
-- Site: https://mcyj.github.io/travel-assistant-web/
-- English submission URL: https://mcyj.github.io/travel-assistant-web/en/#partners
-- Korean: https://mcyj.github.io/travel-assistant-web/ko/
-- Publisher: RushLabs, South Korea
+- [English](https://mcyj.github.io/travel-assistant-web/en/)
+- [한국어](https://mcyj.github.io/travel-assistant-web/ko/)
+- [Screenshots](https://mcyj.github.io/travel-assistant-web/en/#screenshots)
+- [Browser downloads](https://mcyj.github.io/travel-assistant-web/en/#download)
 
-## Build and validation
+The introduction combines coupon-code instructions, available-offer links, product screenshots and browser-specific ZIP downloads. Existing `/store-assets/` URLs redirect to the introduction's screenshot section. No store listing or guaranteed discount is implied by a ZIP download. Safari has installation information because these ZIPs are not signed native Safari apps. Firefox ZIP installation is temporary.
 
-No runtime dependencies or external assets.
+## Build
 
 ```sh
 npm run build
@@ -17,12 +17,8 @@ npm test
 npm run serve
 ```
 
-Source copy is in `locales.mjs`; `scripts/build.mjs` generates `docs/` including static HTML, canonical/hreflang tags, sitemap, English root and a custom 404. GitHub Pages publishes `main:/docs`. Rebuild and commit generated files after changes.
+`scripts/build.mjs` is the only page generator. It produces 87 localized introductions, help pages and privacy summaries from `product-locales.json`, `gallery-locales.json`, `website-copy.mjs` and `website-privacy.json`. English and Korean installation instructions are available; other locales identify the English installation text explicitly. Translations require linguistic review. GitHub Pages publishes `main:/docs`.
 
-Website locales: en, ko, ja, zh-CN, zh-TW, de, fr, es, pt-BR, it, ar, id. All website sections are translated without fallback. Linguistic review by native speakers remains pending. The extension's 87-language selector and its translation coverage are a separate contract.
+`scripts/sync-extension-assets.py /path/to/extension-checkout` copies only manifest-verified artwork, validated browser archives and selected public UI messages. It does not copy credentials, account records or the private source checkout. Published archive checksums are in `assets/downloads/manifest.json`. Original screenshot provenance remains in the artwork manifest.
 
-## Public content boundary
-
-This repository contains only introduction-site code, the product icon, and a development popup capture. The extension source repository remains private. No affiliate IDs, tokens, credentials, private account records, fabricated discounts, audience metrics or approval claims are included. Public email is a contact link, not an email submission system. The linked full extension privacy policy is provided in English and Korean.
-
-`project-context.md` is the single project log. Store publication, affiliate approval, verified benefits and operational revenue are not established by this site deployment.
+The site has no analytics SDK or contact form. The privacy pages describe local preferences, request metadata, affiliate links and external destinations. `project-context.md` is the single project log. Site deployment, store publication, affiliate permissions and actual installed-browser attribution are separate results.
